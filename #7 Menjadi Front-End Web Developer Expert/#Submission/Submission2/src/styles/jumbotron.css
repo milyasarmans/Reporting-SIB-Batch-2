@@ -1,0 +1,53 @@
+    .jumbotron {
+        display: flex;
+        background: url("./images/hero.jpg");
+        background-position: center;
+        align-items: center;
+        min-height: 610px;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-jumbotron {
+        margin: 0 auto;
+    }
+    
+    .heading-jumbotron {
+        color: var(--gold-color);
+        font-weight: bolder;
+        font-size: 42px;
+        text-shadow: 1px 4px #f4f4f4;
+    }
+    
+    .motto-jumbotron {
+        color: var(--light-color);
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: 50px;
+    }
+    
+    button {
+        text-align: center;
+        background-color: var(--gold-color);
+        min-height: 44px;
+        min-width: 44px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button a {
+        color: var(--light-color);
+        font-size: 18px;
+        text-decoration: none;
+        padding: 15px 30px;
+        font-weight: 700;
+    }
+    
+    button:hover {
+        background-color: var(--chocolate-color);
+    }
+    
+    button:hover a {
+        color: var(--gold-color);
+    }

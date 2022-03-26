@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* GENERAL */
+
+:root {
+    --chocholate-color: #6E3B3B;
+    --brown-color: #AC3F21;
+    --gold-color: #BE6A15;
+    --light-color: #f4f4f4;
+    --text-color: #141313;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-stretch: ultra-condensed;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--gold-color);
+    text-align: center;
+    font-size: 32px;
+    padding: 5px 0;
+}
+
+a {
+    padding: 5px 0;
+}
+
+img {
+    display: block;
+    height: 250px;
+}
+
+
+/* SKIP LINK */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--gold-color);
+    color: var(--light-color);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+/* EXPLORE RESTAURANT */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 50px;
+}
+
+.explore-restaurant {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+/* CARD RESTAURANT */
+
+.restaurant {
+    display: grid;
+    grid-row-gap: 16px;
+    margin: 20px auto auto;
+    text-align: left;
+}
+
+.restaurant-item {
+    box-shadow: 0 4px 8px 0 #0c0c0c33;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.restaurant-container {
+    padding: 10px;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.restaurant-rating {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    background-color: var(--gold-color);
+    color: var(--light-color);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 5px 32px;
+    z-index: 1;
+}
+
+.restaurant-image {
+    width: 100%;
+}
+
+.restaurant-heading {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.restaurant-heading a:hover {
+    color: var(--chocholate-color);
+}
+
+.restaurant-heading a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: var(--gold-color);
+}
+
+.restaurant-description {
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 18px;
+}
+
+.restaurant-container h5 {
+    text-decoration: none;
+    color: var(--brown-color);
+}
