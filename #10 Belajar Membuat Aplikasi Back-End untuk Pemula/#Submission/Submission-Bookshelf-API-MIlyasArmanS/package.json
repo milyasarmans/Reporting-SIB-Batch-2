@@ -1,0 +1,27 @@
+{
+  "name": "submission-bookshelf-api",
+  "version": "1.0.0",
+  "description": "submission dicoding backend pemula",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "lint": "eslint ./src"
+  },
+  "keywords": [
+    "milyasarmans"
+  ],
+  "author": "M Ilyas Arman S",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "nanoid": "^3.3.1"
+  }
+}
