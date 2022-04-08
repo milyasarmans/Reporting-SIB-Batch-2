@@ -9,7 +9,7 @@
         padding: 16px 25px 25px 25px;
     }
     .restaurant-heading {
-        font-size: 20px;
+        font-size: 26px;
     }
     .restaurant-description {
         font-size: 14px;
@@ -53,10 +53,23 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .restaurant-detail {
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+
+    .restaurant-detail .detail-main {
+        padding: 20px 0;
+    }
+    
+    .restaurant-detail .detail-sidebar {
+        padding-left: 20px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    main {
+    /* main {
         max-width: 1200px;
-    }
+    } */
 }

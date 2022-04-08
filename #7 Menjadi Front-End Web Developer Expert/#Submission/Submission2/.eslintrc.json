@@ -11,5 +11,12 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-param-reassign":"off",
+        "no-restricted-globals":"off",
+        "no-underscore-dangle":"off",
+        "no-console": "off",
+        "linebreak-style": "off",
+        "no-extranuous-dependencies": "off",
+        "no-extra-semi": 0 
     }
 }
