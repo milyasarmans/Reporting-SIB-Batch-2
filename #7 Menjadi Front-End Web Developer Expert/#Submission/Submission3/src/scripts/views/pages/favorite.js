@@ -4,13 +4,13 @@ import { createRestaurantItemTemplate } from '../templates/template-creator';
 const Favourite = {
   async render() {
     return `
-    <div class="loader-container" id="loader-container">
-      <div id="loader"></div>
-    </div> 
+        <div class="loader-container" id="loader-container">
+          <div id="loader"></div>
+        </div> 
         <section class="container">
             <div id="focusContent">
                 <h1>Restoran Favorit</h1>
-                <div class="restaurant" id="restaurant-list">
+                <div class="restaurant" id="restaurant">
 
             </div>
         </section>
@@ -19,11 +19,9 @@ const Favourite = {
 
   async afterRender() {
     const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
-    const container = document.querySelector('#restaurant-list');
+    const container = document.querySelector('#restaurant');
     if (restaurants.length === 0) {
-      container.innerHTML = `
-        Tidak ada restaurant yang difavoritkan
-      `;
+      container.innerHTML = 'Tidak ada restaurant yang difavoritkan';
     }
     restaurants.forEach((restaurant) => {
       container.innerHTML += createRestaurantItemTemplate(restaurant);

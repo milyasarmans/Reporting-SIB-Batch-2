@@ -1,0 +1,60 @@
+.navbar {
+    font-size: 20px;
+    background-color: var(--gold-color);
+    border-bottom: 5px solid var(--light-color);
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    padding: 10px;
+    display: inline-block;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 20px;
+    font-size: 26px;
+}
+
+.main-navbar {
+    list-style-type: none;
+    min-height: 44px;
+    display: none;
+}
+
+.main-navbar li {
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.main-navbar li a {
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.navbar-link,
+.navbar-brand {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.toggle-menu {
+    background-color: transparent;
+    color: var(--light-color);
+    padding: 15px 12px;
+    position: absolute;
+    /* top: 10px; */
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.navbar button i {
+    padding: 8px;
+    font-size: 28px;
+}
+
+.active {
+    display: block;
+}

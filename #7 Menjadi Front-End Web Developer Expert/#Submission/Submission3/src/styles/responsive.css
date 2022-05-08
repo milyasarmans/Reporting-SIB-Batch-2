@@ -1,0 +1,80 @@
+@media screen and (max-width: 360px) {
+    .jumbotron-title, .motto-jumbotron{
+        padding-top: 30%;
+    }
+}
+@media screen and (min-width: 678px) {
+    .restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+    .restaurant-container {
+        padding: 16px 25px 25px 25px;
+    }
+    .restaurant-heading {
+        font-size: 26px;
+    }
+    .restaurant-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .navbar-brand {
+        margin-top: 0;
+    }
+    .main-navbar {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-navbar li {
+        margin: 0;
+    }
+    .navbar-link {
+        margin-left: 40px;
+    }
+    .navbar-brand:hover,
+    .navbar-link:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .restaurant-detail {
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+
+    .restaurant-detail .detail-main {
+        padding: 20px 0;
+    }
+    
+    .restaurant-detail .detail-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+} */

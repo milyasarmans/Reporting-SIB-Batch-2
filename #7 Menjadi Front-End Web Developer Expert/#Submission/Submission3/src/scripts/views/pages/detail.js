@@ -1,14 +1,16 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import/extensions */
 /* eslint-disable consistent-return */
 /* eslint-disable no-alert */
 /* eslint-disable no-undef */
 import UrlParser from '../../routes/url-parser';
 import RestaurantDbSource from '../../data/restaurantdb-source';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 import Review from '../../utils/review';
 import {
   createDetailRestaurantItem,
-  createLikeButtonTemplate,
 } from '../templates/template-creator';
+import FavoriteRestaurantIdb from '../../data/favoriterestaurant-idb';
 
 const Detail = {
   async render() {
@@ -45,14 +47,13 @@ const Detail = {
       restaurant = restaurant.restaurant;
       const container = document.querySelector('#restaurant');
       container.innerHTML = createDetailRestaurantItem(restaurant);
-      const likeButtonContainer = document.querySelector('#restaurant-like-container');
-      likeButtonContainer.innerHTML = createLikeButtonTemplate();
 
       const loaderContainer = document.querySelector('#loader-container');
       loaderContainer.style.display = 'none';
 
-      LikeButtonInitiator.init({
+      LikeButtonPresenter.init({
         likeButtonContainer: document.querySelector('#restaurant-like-container'),
+        favoriteRestaurants: FavoriteRestaurantIdb,
         restaurant: {
           id: restaurant.id,
           name: restaurant.name,

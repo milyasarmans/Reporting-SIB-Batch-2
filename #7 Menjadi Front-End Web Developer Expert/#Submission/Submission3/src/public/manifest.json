@@ -1,0 +1,48 @@
+{
+    "short_name": "Lapak Lapar",
+    "name": "Lapak Lapar App",
+    "description": "find your perfect restaurant",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "icons/icon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "icons/icon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "icons/icon-48x48.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "icons/icon-96x96.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "icons/icon-192x192.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    
+    "start_url": "/index.html",
+    "theme_color": "#be6a15",
+    "background_color": "#ffffff"
+  }
