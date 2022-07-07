@@ -1,0 +1,111 @@
+import { nanoid } from 'nanoid';
+
+const defaultCategory = (userId) => [
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Gaji',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Bonus',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Bisnis',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Investasi',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Pemberian',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Penjualan',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Pinjaman',
+    user_id: userId,
+    type: 'income',
+    limited: 0,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Belanja',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Pajak',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Tagihan',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Transportasi',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Hiburan',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Pengobatan dan Kesehatan',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Makan dan Minum',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+  {
+    id: `cat-${nanoid(16)}`,
+    name: 'Pendidikan',
+    user_id: userId,
+    type: 'expense',
+    limited: 1000000,
+  },
+];
+
+export default defaultCategory;

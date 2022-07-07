@@ -1,0 +1,232 @@
+@use '../root.scss' as root;
+
+.main-registration{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10% 20%;
+    justify-content: center;
+    
+    .left{
+        min-height: 70vh;
+        width: 120%;
+        border-radius: 0 15px 15px 0;
+        background-color: root.$primary;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        justify-content: center;
+        
+        a{
+            display: none;
+            svg{
+                display: none;
+            }
+        }
+
+        img{
+            height: 150px;
+        }
+
+        h2{
+            padding: 10px 0;
+            font-size: 20px;  
+            color: root.$white;
+            text-transform: uppercase;
+        }
+    
+        p{
+            font-family: sans-serif;
+            display: inline-block;  
+            font-size: 15px;  
+            text-align: center;
+            font-weight: lighter;
+            text-transform: none;
+        }
+
+        button{
+            background-color: root.$primary;
+            text-align: center;
+            margin: 10px 0;
+            display: inline-block;
+            position: relative;
+            border: 1px solid root.$white;
+            width: 150px;
+            left: 20%;
+            font-weight: bolder;
+            border-radius: 10px;
+
+            a{
+                // width: 100%;
+                text-decoration: none;
+                padding: 14px;
+                display: inline-block;
+                color: root.$white;
+            }
+        }
+
+        button:hover{
+            background-color: root.$white;
+
+            a{
+                color: root.$primary;
+            }
+        }
+    }
+
+    .right{
+        padding: 6% 20px;
+        min-height: 80vh;
+        width: 130%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+        form{
+            width: 90%;
+
+            h1{
+                padding:10px;
+                font-size: 18px;
+                text-align:center;
+                color: root.$primary;
+                text-transform: uppercase;
+            }
+
+            input[type=text], input[type=password], select {
+                width: 100%;
+                padding: 13px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                box-sizing: border-box;
+                border-left: 3px solid root.$primary;
+                box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
+                
+                &:focus {
+                    box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+                }
+            }
+            
+            button[type=submit] {
+                width: 100%;
+                background-color: root.$primary;
+                display: inline-block;
+                color: white;
+                font-size: 16px;
+                padding: 12px 20px;
+                font-weight: bolder;
+                margin: 28px 0 8px;
+                border: none;
+                border-radius: 4px;
+                border: 1px solid root.$primary;
+                cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+                background-color: root.$white;
+                color: root.$primary;
+                border: 1px solid root.$primary;
+            }
+
+            button{                
+                background-color: root.$white;
+                color: root.$primary;
+                border: 1px solid root.$primary;
+            }
+    
+            a{
+                text-align: center;
+                font-family: sans-serif;  
+                text-decoration: none;
+                color: root.$primary;
+            }
+    
+            a:hover{
+                font-family: sans-serif;  
+                text-decoration: underline;
+                color: root.$primary;
+            }
+        }        
+    }
+}
+
+@media screen and (max-width: 996px) {
+    
+    .main-registration{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        .left{
+            width: 80%;
+            min-height: 0vh;
+            border-radius: 0;
+
+            a{
+                display: flex;
+                padding: 5px;
+                position: absolute;
+                top: 2%;
+                left: 10%;
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+                align-items: center;
+                flex-direction: row;
+
+                svg{
+                    display: block;
+                    padding: 12px;
+                }
+            }
+
+            h2, p, button{
+                display: none;
+            }
+        }
+        .right{
+            min-height: 50vh;
+            width: 80%;
+            margin: 5%;
+
+            form{
+                
+            
+            button {
+                width: 100%;
+                background-color: root.$white;
+                display: inline-block;
+                margin: 5px 0 8px;
+                border: none;
+                border-radius: 4px;
+                border: 1px solid root.$primary;
+                cursor: pointer;
+
+                a{
+                    // width: 100%;
+                    padding: 12px 20px;
+                    display: inline-block;
+                    color: root.$primary;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    text-decoration: none;
+                }
+            }
+            
+            button:hover {
+                background-color: #e0e0e0;
+                border: 1px solid root.$white;
+
+                a{
+                    color: root.$white;
+                    text-decoration: none;
+                }
+            }
+            }
+        }
+    }
+}

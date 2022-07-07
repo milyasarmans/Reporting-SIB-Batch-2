@@ -1,0 +1,113 @@
+@use '../root.scss' as root;
+
+section.main{
+  
+  header{
+    display: flex;
+    background-color: root.$primary;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+
+    .profile{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .images {
+        margin: .5rem;
+        width: 150px;
+        height: 150px;
+        background-color: #f8f8f8;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      h1{
+        margin: .1rem;
+        font-size: 18px;
+        font-weight: bold;
+        color: root.$white;
+        text-transform: uppercase;
+      }
+
+      p{
+        font-size: 14px;
+        color: root.$white;
+        font-family: Verdana, Tahoma, sans-serif;
+      }
+      
+      button{
+        margin: 1rem .5rem;
+        padding: .3rem .8rem;
+        background: root.$dark-primary;
+        font-family: sans-serif;
+        font-size: 14px;
+        border-radius: .2rem;
+        color: root.$white;
+        border: none;
+      }
+    }
+  }
+
+  article{
+    padding: 2rem 20%;
+    margin: 2rem 0 5rem;
+
+    .card{
+      margin-top: 15px;
+
+      .header{
+        font-size: 16px;
+        padding: .3rem 0;
+      }
+
+      .detail{
+        padding: .7rem 1rem;
+        font-weight: normal;
+        font-size: 16px;
+        border: 2px solid #f4f4f4;
+        overflow: auto;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+      }
+    }
+            
+    button {
+        width: 100%;
+        background-color: root.$primary;
+        display: inline-block;
+        margin: 15px 0 15px 0;
+        border-radius: 4px;
+        border: 1px solid root.$primary;
+        cursor: pointer;
+
+        padding: 12px 20px;
+        display: inline-block;
+        color:  root.$white;
+        font-size: 16px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+            
+    button:hover {
+        background-color: root.$dark-primary;
+        border: 1px solid root.$dark-primary;
+        color: root.$primary;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.main{
+    article{
+      padding: 2rem 10%;
+    }
+  }
+}
